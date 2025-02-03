@@ -1,0 +1,7 @@
+{
+  "name": "APPMOTOS",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
