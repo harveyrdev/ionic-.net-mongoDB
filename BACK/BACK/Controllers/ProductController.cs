@@ -22,8 +22,24 @@ namespace BACK.Controllers
         [HttpGet]
         public async Task<IActionResult> GetProducts()
         {
-            var products = await _productRepository.GetProductsAsync();
-            return Ok(products);
+
+            try
+            {
+                List<Product> products = await _productRepository.GetProductsAsync();
+
+                return Ok(products);
+
+            }
+            catch (Exception e)
+            {
+                _logger.LogError("An error occurred while inserting the product: {ErrorMessage}", e.Message);
+                return BadRequest(new
+                {
+                    code = HttpStatusCode.BadRequest,
+                    message = "An error occurred while inserting the product."
+                });
+            }
+
         }
 
         [HttpGet("{id}")]

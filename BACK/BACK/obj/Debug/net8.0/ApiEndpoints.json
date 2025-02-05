@@ -18,8 +18,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "products",
-        "Type": "System.Collections.Generic.List\u00601[[BACK.Models.Product, BACK, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Name": "order",
+        "Type": "BACK.Models.Order",
         "IsRequired": true
       }
     ],

@@ -6,21 +6,20 @@ import { Observable } from 'rxjs';
 import { Order } from '../models/order';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class OrderService {
- private apiUrl= `${environment.apiUrl}/api/orders`
+  private apiUrl = `${environment.apiUrl}/api/order`;
 
-  private _http= inject(HttpClient);
+  private _http = inject(HttpClient);
 
-  
-  getOrders(){
+  getOrders(): Observable<any> {
     return this._http.get(this.apiUrl);
   }
 
-  crearOrden(productos: Product[]): Observable<Order> {
-    return this._http.post<Order>(this.apiUrl, productos);
+  crearOrden(order: Order): Observable<Order> {
+    return this._http.post<Order>(this.apiUrl, order);
   }
 
-  constructor() { }
+  constructor() {}
 }

@@ -35,3 +35,16 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import '@ionic/angular/css/palettes/dark.system.css';
+
+
+.my-custom-modal-css {
+    --height: 70%; // Altura del modal
+    --border-radius: 16px 16px 0 0; // Bordes redondeados solo en la parte superior
+    --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); // Sombra más pronunciada
+    align-items: flex-end; // Alineación desde la parte inferior
+    background: rgba(0, 0, 0, 0.5); // Fondo semitransparente
+  }
+  
+  .my-custom-modal-css::part(backdrop) {
+    background: rgba(0, 0, 0, 0.5); // Fondo oscuro semitransparente
+  }

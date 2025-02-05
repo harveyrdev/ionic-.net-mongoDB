@@ -18,12 +18,16 @@ namespace BACK.Models
             set => DatabaseId = ObjectId.Parse(value);
         }
         [Required]
-        public string CustomerName { get; set; }
-
-        public decimal TotalAmount { get; set; }
-        public DateTime OrderDate { get; set; }
+        public string customerName { get; set; }
+        public decimal totalAmount { get; set; }
+        public DateTime orderDate { get; set; }
         [Required(ErrorMessage = "At least one guest is required.")]
         [MinLength(1, ErrorMessage = "At least one guest is required.")]
-        public List<Product> OrderItems { get; set; }
+        public List<Product> orderItems { get; set; }
+
+        public Order()
+        {
+            orderDate = DateTime.Now;
+        }
     }
 }

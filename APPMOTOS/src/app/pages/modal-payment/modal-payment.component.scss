@@ -1,0 +1,27 @@
+
+
+  ion-content {
+    --background: #f5f5f5; // Fondo claro para el contenido
+  }
+  
+  ion-toolbar {
+    --background: #3880ff; // Color primario para el toolbar
+    --color: #fff; // Texto blanco
+  }
+  
+  ion-item {
+    --background: #fff; // Fondo blanco para los inputs
+    --border-radius: 8px; // Bordes redondeados
+    --padding-start: 10px;
+    --padding-end: 10px;
+    --highlight-color-focused: #3880ff; // Color del borde al enfocar
+  }
+  
+  ion-button {
+    --border-radius: 8px; // Bordes redondeados para el botón
+    font-weight: bold; // Texto en negrita
+  }
+  
+  ion-icon {
+    font-size: 20px; // Tamaño del ícono
+  }

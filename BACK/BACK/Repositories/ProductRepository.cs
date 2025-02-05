@@ -16,13 +16,15 @@ namespace BACK.Repositories
         }
 
         public async Task<List<Product>> GetProductsAsync()
+
+
         {
-            return await _Products.Find(p => true).ToListAsync();
+            return await _Products.Find(_ => true).ToListAsync();
         }
 
         public Task<Product> GetProductId(ObjectId id)
         {
-            var filter = Builders<Product>.Filter.Eq(x => x.DatabaseId, id);
+            var filter = Builders<Product>.Filter.Eq(x => x.databaseId, id);
             var productt = _Products.Find(filter).FirstOrDefaultAsync();
             return productt;
         }
@@ -35,12 +37,12 @@ namespace BACK.Repositories
         public async Task UpdateProduct(ObjectId id, Product producto)
         {
 
-            var filter = Builders<Product>.Filter.Eq(x => x.DatabaseId, id);
+            var filter = Builders<Product>.Filter.Eq(x => x.databaseId, id);
             var update = Builders<Product>.Update
-                .Set(x => x.Name, producto.Name)
-                .Set(x => x.Price, producto.Price)
-                .Set(x => x.Stock, producto.Stock)
-                .Set(x => x.Description, producto.Description)
+                .Set(x => x.name, producto.name)
+                .Set(x => x.price, producto.price)
+                .Set(x => x.stock, producto.stock)
+                .Set(x => x.description, producto.description)
 
                 ;
             await _Products.UpdateOneAsync(filter, update);
@@ -51,7 +53,7 @@ namespace BACK.Repositories
 
 
         {
-            var filter = Builders<Product>.Filter.Eq(x => x.DatabaseId, id);
+            var filter = Builders<Product>.Filter.Eq(x => x.databaseId, id);
             await _Products.DeleteOneAsync(filter);
         }
 

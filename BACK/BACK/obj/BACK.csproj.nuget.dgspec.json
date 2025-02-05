@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\JOAO\\Desktop\\Datos Joao\\Tutoriales\\Tienda Virtual Angular C# MongoDB\\BACK\\BACK\\BACK.csproj": {}
+    "C:\\Users\\JOAO\\Desktop\\Datos Joao\\Tutoriales\\Tienda Virtual Angular NET MongoDB\\BACK\\BACK\\BACK.csproj": {}
   },
   "projects": {
-    "C:\\Users\\JOAO\\Desktop\\Datos Joao\\Tutoriales\\Tienda Virtual Angular C# MongoDB\\BACK\\BACK\\BACK.csproj": {
+    "C:\\Users\\JOAO\\Desktop\\Datos Joao\\Tutoriales\\Tienda Virtual Angular NET MongoDB\\BACK\\BACK\\BACK.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JOAO\\Desktop\\Datos Joao\\Tutoriales\\Tienda Virtual Angular C# MongoDB\\BACK\\BACK\\BACK.csproj",
+        "projectUniqueName": "C:\\Users\\JOAO\\Desktop\\Datos Joao\\Tutoriales\\Tienda Virtual Angular NET MongoDB\\BACK\\BACK\\BACK.csproj",
         "projectName": "BACK",
-        "projectPath": "C:\\Users\\JOAO\\Desktop\\Datos Joao\\Tutoriales\\Tienda Virtual Angular C# MongoDB\\BACK\\BACK\\BACK.csproj",
+        "projectPath": "C:\\Users\\JOAO\\Desktop\\Datos Joao\\Tutoriales\\Tienda Virtual Angular NET MongoDB\\BACK\\BACK\\BACK.csproj",
         "packagesPath": "C:\\Users\\JOAO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JOAO\\Desktop\\Datos Joao\\Tutoriales\\Tienda Virtual Angular C# MongoDB\\BACK\\BACK\\obj\\",
+        "outputPath": "C:\\Users\\JOAO\\Desktop\\Datos Joao\\Tutoriales\\Tienda Virtual Angular NET MongoDB\\BACK\\BACK\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\JOAO\\AppData\\Roaming\\NuGet\\NuGet.Config",

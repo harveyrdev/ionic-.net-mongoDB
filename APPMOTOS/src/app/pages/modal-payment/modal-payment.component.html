@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Procesar Pago</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismiss()">
+        <ion-icon name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form (ngSubmit)="onSubmit()">
+
+    <ion-item lines="full" class="ion-margin-bottom">
+      <ion-label position="floating">Nombre de cliente</ion-label>
+            <ion-input type="text" [(ngModel)]="custumer" name="custumer" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full" class="ion-margin-bottom">
+      <ion-label position="floating">Número de Tarjeta</ion-label>
+      <ion-input type="text" [(ngModel)]="cardNumber" name="cardNumber" required></ion-input>
+    </ion-item>
+
+    <ion-grid>
+      <ion-row>
+       
+        <ion-col size="6">
+          <ion-item lines="full" class="ion-margin-bottom">
+            <ion-label position="floating">Fecha de Expiración</ion-label>
+            <ion-input type="text" [(ngModel)]="expirationDate" name="expirationDate" required></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="6">
+          <ion-item lines="full" class="ion-margin-bottom">
+            <ion-label position="floating">CVV</ion-label>
+            <ion-input type="text" [(ngModel)]="cvv" name="cvv" required></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-item lines="full" class="ion-margin-bottom">
+      <ion-label position="floating">Dirección de Entrega</ion-label>
+      <ion-input type="text" [(ngModel)]="shippingAddress" name="shippingAddress" required></ion-input>
+    </ion-item>
+
+    <ion-button expand="full" type="submit" class="ion-margin-top" color="primary">
+      <ion-icon name="card" slot="start"></ion-icon>
+      Pagar Ahora
+    </ion-button>
+  </form>
+</ion-content>

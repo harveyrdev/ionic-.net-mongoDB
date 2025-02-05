@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ViEoyeHsSw8=",
+  "dgSpecHash": "OxpywvUBAHY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\JOAO\\Desktop\\Datos Joao\\Tutoriales\\Tienda Virtual Angular C# MongoDB\\BACK\\BACK\\BACK.csproj",
+  "projectFilePath": "C:\\Users\\JOAO\\Desktop\\Datos Joao\\Tutoriales\\Tienda Virtual Angular NET MongoDB\\BACK\\BACK\\BACK.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\JOAO\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\JOAO\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

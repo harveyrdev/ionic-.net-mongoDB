@@ -26,7 +26,7 @@ namespace BACK.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CrearOrden([FromBody] List<Product> products)
+        public async Task<IActionResult> CrearOrden([FromBody] Order order)
         {
 
 
@@ -36,13 +36,8 @@ namespace BACK.Controllers
             try
             {
 
-                var orden = new Order
-                {
 
-                    OrderItems = products,
-                    TotalAmount = (decimal)products.Sum(p => p.Price)
-                };
-                await _orderRepository.NewOrder(orden);
+                await _orderRepository.NewOrder(order);
                 return Ok(new
                 {
                     code = HttpStatusCode.OK,
